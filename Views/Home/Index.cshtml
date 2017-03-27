@@ -1,0 +1,19 @@
+﻿@model HomeLibrary.Models.Book
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Add book:</h2>
+
+<form action="/Home/Index" methon="post">
+    
+    <label for="name">Book's author:</label>
+    <input type="text" name="author" id="author"/>
+
+    <label for="author"> Book's name:</label>
+    <input type="text" name="name" id="name" />
+
+    <input type="submit" value="Send"/>
+
+</form>
