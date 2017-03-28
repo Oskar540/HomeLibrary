@@ -1,10 +1,17 @@
 ﻿@model HomeLibrary.Models.Book
-    
+
+@using System.Xml.Linq;
+@using System.Xml.XPath;
 
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>BooksList:</h2>
+
+
+XDocument.Load(@"C:\users\oskar\documents\visual studio 2015\projects\homelibrary\homelibrary\app_data\booksdata.xml")
+
+
 
 @*Odczytywanie objektow z pliku BooksData.xml i wyswietlanie ich atrybutow petla foreach*@
